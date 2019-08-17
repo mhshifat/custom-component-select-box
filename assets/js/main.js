@@ -50,6 +50,8 @@ document.querySelectorAll(".container").forEach(item => {
           );
           this.classList.add("selected");
           options.classList.toggle("status-options");
+          options.style = "none";
+          options.previousSibling.previousSibling.style = "none";
         });
         options.appendChild(div);
       }

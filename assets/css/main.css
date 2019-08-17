@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #333333;
+  height: 100vh;
+  padding: 100px 0;
+  color: #f7f7f7;
+  display: flex;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container select {
+  display: none;
+}
+
+.select-selected {
+  width: 200px;
+  height: 40px;
+  background: slateblue;
+  overflow: hidden;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border: 1px solid transparent;
+}
+
+.select-selected-icon {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
+
+.select-selected-icon:hover {
+  opacity: 0.8;
+}
+
+.select-options {
+  width: 200px;
+  height: auto;
+  background: slateblue;
+  border-radius: 2px;
+}
+
+.select-option {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-top: 1px solid rgba(247, 247, 247, 0.1);
+}
+
+.selected {
+  border-right: 2px solid rgba(247, 247, 247, 0.3);
+}
+
+.status-options {
+  display: none;
+}
